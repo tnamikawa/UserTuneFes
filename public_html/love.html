@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta http-equiv="content-style-type" content="text/css">
+  <meta http-equiv="content-script-type" content="text/javascript">
+  <meta name="keywords" content="ニコニコ動画,動画,コメント">
+  <meta name="description" content="｢ニコニコ動画｣は音楽・お笑い・アニメ・ゲームなどの動画再生中にコメントを付けて楽しむ動画コミュニティサイトです">
+  <title>niconico</title>
+  
+  <link rel="canonical" href="http://www.nicovideo.jp/" />
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <link rel="apple-touch-icon" href="./img/apple-touch-icon-114x114.png" />
+
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <script src="./js/fabric.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    if (document.location.protocol == "http:") {
+      urchinTracker();
+    }
+  </script>
+</head>
+<body>
+<script type="text/javascript">
+    var screenWidth = window.innerWidth;
+    var screenHeight = window.innerHeight;
+    document.write('<div id="cvs_layer" style="width:' + screenWidth + 'px; height:' + screenHeight + 'px;">');
+    document.write('<canvas id="cvs" style="width:' + screenWidth + 'px; height:' + screenHeight + 'px;"></canvas>');
+    document.write('</div>');
+    document.write('<div style="font-size:150%">');
+    document.write('<span href="#" onclick="GLB.speed = 1000; GLB.concurrency = 1;">平常運転</span>&nbsp;');
+    document.write('<span href="#" onclick="GLB.speed = 500; GLB.concurrency = 3;">３倍速</span>&nbsp;');
+    document.write('<span href="#" onclick="GLB.speed = 1000; GLB.concurrency = 50;">爆速！！！！</span>&nbsp;');
+    document.write('</div>');
+</script>
+<script type="text/javascript" src="./index.js"></script>
+
+</body>
+</html>
