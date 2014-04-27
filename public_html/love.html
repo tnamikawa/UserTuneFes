@@ -29,6 +29,9 @@
     document.write('<div id="cvs_layer" style="width:' + screenWidth + 'px; height:' + screenHeight + 'px;">');
     document.write('<canvas id="cvs" style="width:' + screenWidth + 'px; height:' + screenHeight + 'px;"></canvas>');
     document.write('</div>');
+    document.write('<audio src="./startdash8a.mp3" controls>');
+    document.write('<p>音声を再生するには、audioタグをサポートしたブラウザが必要です。</p>');
+    document.write('</audio>');
     document.write('<div style="font-size:150%">');
     document.write('<span href="#" onclick="GLB.speed = 1000; GLB.concurrency = 1;">平常運転</span>&nbsp;');
     document.write('<span href="#" onclick="GLB.speed = 500; GLB.concurrency = 3;">３倍速</span>&nbsp;');
