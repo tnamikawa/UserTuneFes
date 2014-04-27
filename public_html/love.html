@@ -25,7 +25,7 @@
 <body>
 <script type="text/javascript">
     var screenWidth = window.innerWidth;
-    var screenHeight = window.innerHeight;
+    var screenHeight = Math.floor(screenWidth * 0.57);
     document.write('<div id="cvs_layer" style="width:' + screenWidth + 'px; height:' + screenHeight + 'px;">');
     document.write('<canvas id="cvs" style="width:' + screenWidth + 'px; height:' + screenHeight + 'px;"></canvas>');
     document.write('</div>');
